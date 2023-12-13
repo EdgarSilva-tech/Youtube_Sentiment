@@ -1,0 +1,19 @@
+pandas
+numpy
+seaborn
+matplotlib
+transformers
+datasets
+fastapi
+uvicorn[standard]
+tweepy
+python-dotenv
+google-api-python-client
+jinja2
+python-multipart
+torch
+accelerate
+transformers[torch]
+scikit-learn
+evaluate
+#-e .
