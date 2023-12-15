@@ -31,7 +31,7 @@ class Ingest_Data:
             train_set = split["train"]
             eval_set = split["test"]
 
-            train_set = train_set.shuffle(seed=42).select([i for i in list(range(10000))])
+            train_set = train_set.shuffle(seed=42).select([i for i in list(range(1000))])
             eval_set = eval_set.shuffle(seed=42).select([i for i in list(range(100))])
 
             train_set.save_to_disk(self.ingestion_config.train_data_path)

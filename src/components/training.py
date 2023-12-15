@@ -50,7 +50,7 @@ class Model_Training:
             num_train_epochs=3,
             weight_decay=0.01,
             save_strategy="epoch",
-            output_dir="trained_model")
+            output_dir=self.trainconfig.model_path)
 
         trainer = Trainer(
             model=model,
